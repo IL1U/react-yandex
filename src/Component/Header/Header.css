@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 824px;
+    width: 80.5%;         
+    margin: 10px auto;    
+    font-size: 1.02em;
+    font-weight: 500;
+}
+
+.nameServer {
+    text-decoration: none;
+    color: #7F8285;
+}
+
+@media screen and (max-width: 330px) {
+    .header {
+        margin: 11px auto;  
+        width: 90%;
+        font-size: 0.77em;
+    }
+}

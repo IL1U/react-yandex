@@ -1,0 +1,41 @@
+.footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    min-height: 32px;
+    width: 100%;
+    background-color: #f0f2f3;
+    font-size: 13px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #7f8285;
+}
+
+.wrapFooter {    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 824px;
+    width: 80.5%;         
+    margin: 0 auto;
+}
+
+.refBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.refBlock a {
+    text-decoration: none;
+    color: #7f8285;
+}
+
+.refBlock a:hover {
+    color: #e00000;
+}
+
+@media screen and (max-width: 330px) {
+    .wrapFooter {
+        width: 90%;
+    }
+}

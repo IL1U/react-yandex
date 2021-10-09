@@ -1,0 +1,20 @@
+.ButtonBuild {    
+    width: 87px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: #e6e6e6;
+    font-weight: 400;
+    padding: 0;
+    line-height: 28px;
+    font-size: 0.547em;
+    border: none;  
+}
+
+@media screen and (max-width: 330px) {
+    .ButtonBuild {
+        width: 28px; 
+    }
+    .textSettings {
+        display: none;
+    }
+}
