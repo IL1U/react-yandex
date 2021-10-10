@@ -1,11 +1,13 @@
 import React from 'react';
 import './HistoryPage.css';
-import Button from "../Button/Button"
+import Button from "../Button/Button";
+import ButtonSettings from "../ButtonSettings/ButtonSettings";
+import ButtonBuild from "../ButtonBuild/ButtonBuild";
 
 
 function HistoryPage(props) {
     const data = [
-        {
+        /*{
             idJob: 1368, 
             statusJob: "good",
             timeJob: "1 ч 30 мин",
@@ -85,7 +87,7 @@ function HistoryPage(props) {
             idCommit: "9c9f0b9",
             author: "Philip Kirkorov",
             date: "21 янв, 03:26"
-        },
+        },*/
         {
             idJob: 1365, 
             statusJob: "fail",
@@ -98,11 +100,23 @@ function HistoryPage(props) {
         }      
     ];
 
+    const isOpen = false;
+    
   return (
-    <div className="HistoryPage">
-        {data.map((element) => <Button props={element} key={Date.now()}/>)}
-        <button>Show more</button>
-    </div>
+    <>
+        <header className="header">
+            <a className="nameServer" href="#">philip1967/my-awesome-repo-long</a>        
+            <div>
+                <ButtonBuild />
+                &nbsp;
+                <ButtonSettings text=""/>         
+            </div>
+        </header>
+        <div className="HistoryPage">
+            {data.map((element) => <Button props={element} key={Date.now()+Math.random()}/>)}
+            <button>Show more</button>
+        </div>
+    </>
   );
 }
 

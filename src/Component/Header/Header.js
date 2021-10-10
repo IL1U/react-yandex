@@ -4,16 +4,16 @@ import ButtonSettings from "../ButtonSettings/ButtonSettings"
 import ButtonBuild from "../ButtonBuild/ButtonBuild"
 
 
-function Header({isSetSettings}) {
-
+function Header() {
+  const isSetSetting = false;
   return (
     <header className="header">
-        <a className="nameServer" href="#">{(isSetSettings) ? "philip1967/my-awesome-repo-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long" : "School CI server"}</a>        
-        <div>
-          {(isSetSettings) ? <ButtonBuild /> : null} 
+        <a className="nameServer" href="#">{(isSetSetting) ? "philip1967/my-awesome-repo-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long" : "School CI server"}</a>        
+        { <div>
+          {(isSetSetting) ? <ButtonBuild /> : null} 
           &nbsp;
-          {(isSetSettings) ? <ButtonSettings text=""/> : <ButtonSettings text="Settings"/>}         
-        </div>
+          {(isSetSetting) ? <ButtonSettings text=""/> : <ButtonSettings text="Settings"/>}         
+        </div> }
     </header>
   );
 }

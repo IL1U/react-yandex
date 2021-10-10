@@ -1,6 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 824px;
+    width: 80.5%;         
+    margin: 10px auto;    
+    font-size: 1.02em;
+    font-weight: 500;
+}
+.nameServer {
+    text-decoration: none;
+    color: #7F8285;
+}
+
 .SettingsPage {
     max-width: 824px;
     width: 80.5%;
+    height: 80vh;
     margin: 0 auto;
     padding: 11px 0;
     font-size: 0.547em;
@@ -55,6 +70,11 @@ input[placeholder] {
 }
 
 @media screen and (max-width: 330px) {
+    .header {
+        margin: 11px auto;  
+        width: 90%;
+        font-size: 0.77em;
+    }
     .SettingsPage  {
         width: 90%;
         padding: 9px 0;
@@ -64,4 +84,5 @@ input[placeholder] {
         height: 56px;
         line-height: 28px;               
     }
+
 }

@@ -1,17 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 824px;
+    width: 80.5%;         
+    margin: 10px auto;    
+    font-size: 1.02em;
+    font-weight: 500;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+}
+
+.nameServer {
+    text-decoration: none;
+    color: #7F8285;
+}
+
 .StartPage {
     display: inherit;
     justify-content: center;
     align-content:center;
+    height: 79vh;
     font-size: 0.547em;
     text-align: center;
-    font-weight: 400;
-    
+    font-weight: 400;    
     color: black;
 }
 
 .StartPage div {
-    min-height: 270px;
-    /*border: 1px solid black;*/
+    /*min-height: 270px;    */
 }
 
 
@@ -26,4 +45,12 @@
     background-color: #ffcc00;
     border: none;
     border-radius: 4px;        
+}
+
+@media screen and (max-width: 330px) {
+    .header {
+        margin: 11px auto;  
+        width: 90%;
+        font-size: 0.77em;
+    }
 }

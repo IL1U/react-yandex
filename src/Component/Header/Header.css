@@ -8,6 +8,11 @@
     font-weight: 500;
 }
 
+.header div {
+    display: flex;
+    flex-direction: row;
+}
+
 .nameServer {
     text-decoration: none;
     color: #7F8285;
