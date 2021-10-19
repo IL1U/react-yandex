@@ -11,7 +11,7 @@ function SettingsPage() {
       <div className="SettingsPage">
           <h1>Settings</h1>
           <p>Configure repository connection and&nbsp;synchronization settings.</p>
-          <form action="/#" method="GET">
+          <form action="/" method="GET">
               <label>GitHub repository <span>*</span><br/>
               <input type="text" placeholder="user-name/repo-name" name="nameRepository" required="required" /></label><br/>
               <label>Build command <span>*</span><br/>

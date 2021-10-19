@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route  
+} from 'react-router-dom';
 import './App.css';
 import StartPage from "./Component/StartPage/StartPage";
 import SettingsPage from "./Component/SettingsPage/SettingsPage";
@@ -9,15 +14,27 @@ function App() {
 
   const startPage = <StartPage />;  
   const historyPage = <HistoryPage />;
-  const settingsPage = <SettingsPage />;
+  
 
-  const Page = historyPage;
+  const Page = startPage;
   
   return (
-    <React.Fragment>            
-      {Page}
-      <Footer />
-    </React.Fragment>
+  <React.Fragment>
+      <Router>
+          <Switch>
+              <Route path={'/settings'}>
+                  <SettingsPage />
+              </Route>
+              <Route path={'/start'}>
+                  <StartPage />
+              </Route>
+              <Route path={'/'}>
+                  <HistoryPage />
+              </Route>
+          </Switch>
+          <Footer />
+      </Router>
+  </React.Fragment>        
   );
 }
 
